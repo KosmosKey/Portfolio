@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+
+  nav {
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      cursor: pointer;
+      transition: 300ms ease;
+    }
+    h1:hover {
+      color: #e44744;
+    }
+    .MuiButton-root {
+      min-width: fit-content;
+      padding: 10px !important;
+      margin: 0 10px;
+      border-radius: 50px;
+      .MuiSvgIcon-root {
+        font-size: 1.75rem;
+      }
+    }
+  }
+
+  .Header {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+    .Header__InformationName {
+      text-align: center;
+      max-width: 750px;
+
+      .Header__InformationName_Buttons {
+        display: flex;
+        margin-top: 15px;
+        .Header__GitHubButton {
+          color: #fff !important;
+          background: #e44744;
+          font-weight: 600;
+          border: 2px solid #fff;
+          margin-right: 10px;
+          .MuiSvgIcon-root {
+            margin-left: 5px;
+          }
+        }
+
+        .Header__GitHubButton:hover {
+          background: #fff !important;
+          border: 2px solid #e44744 !important;
+          color: #e44744 !important;
+        }
+
+        button {
+          width: 100%;
+          padding: 9px;
+          text-transform: capitalize;
+        }
+
+        .Header__DownloadResume {
+          color: #e44744 !important;
+          background: #fff;
+          border: 2px solid #e44744;
+          font-weight: 600;
+          margin-left: 10px;
+          .MuiSvgIcon-root {
+            margin-left: 5px;
+          }
+        }
+
+        .Header__DownloadResume:hover {
+          background: #e44744 !important;
+          border: 2px solid #e44744 !important;
+          color: #fff !important;
+        }
+      }
+
+      img {
+        border-radius: 50%;
+      }
+      .Header__Junior {
+        color: #211c28;
+        font-weight: 700;
+        margin-top: 25px;
+        text-align: left;
+        font-size: 1.5rem;
+      }
+      h1 {
+        color: #e44744;
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+        margin-top: -7px;
+      }
+      .Header__paragraph {
+        color: #a0a8b6;
+        line-height: 35px;
+        font-weight: 500;
+      }
+    }
+  }
+}
