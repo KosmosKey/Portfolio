@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "@material-ui/core";
-import FacebookIcon from "@material-ui/icons/Facebook";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import YouTubeIcon from "@material-ui/icons/YouTube";
+import { GitHub } from "@material-ui/icons";
 
 const NavigationBar = () => {
   return (
@@ -21,15 +21,22 @@ const NavigationBar = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <Button>
-          <FacebookIcon />
-        </Button>
-        <Button>
-          <TwitterIcon />
-        </Button>
-        <Button>
-          <YouTubeIcon />
-        </Button>
+        <a href="https://github.com/KosmosKey">
+          <Button>
+            <GitHub />
+          </Button>
+        </a>
+        <a href="https://twitter.com/KosmosDeveloper">
+          <Button>
+            <TwitterIcon />
+          </Button>
+        </a>
+
+        <a href="https://www.youtube.com/channel/UCC0nd4ub4bFxIFxWoO2H1kA">
+          <Button>
+            <YouTubeIcon />
+          </Button>
+        </a>
       </motion.div>
     </nav>
   );
