@@ -1,5 +1,5 @@
-import { Button } from "@material-ui/core";
 import React from "react";
+import { Button } from "@material-ui/core";
 import image from "./images/pfp.png";
 import GetAppIcon from "@material-ui/icons/GetApp";
 import GitHubIcon from "@material-ui/icons/GitHub";

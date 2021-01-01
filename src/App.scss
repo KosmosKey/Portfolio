@@ -11,6 +11,66 @@
   display: flex;
   flex-direction: column;
 
+  .Skills {
+    margin-top: 40px;
+    width: 100%;
+    padding: 20px;
+
+    .SkillComponent {
+      .cls-1 {
+        fill: #fff;
+      }
+      .cls-2 {
+        fill: #007acc;
+      }
+      .devicon-typescript-plain {
+        font-size: 100px;
+        color: #007acc;
+      }
+
+      .SkillComponent__ChildrenDiv {
+        background: pink;
+        font-size: 100px !important;
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 600;
+        color: #211c28;
+        margin-top: 10px;
+        text-align: center;
+      }
+    }
+  }
+
+  .Dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .Dashboard__ButtonSelectors {
+      padding: 15px;
+      width: 100%;
+      max-width: 750px;
+      display: flex;
+      margin-bottom: 25px;
+      button {
+        color: #211c28;
+        font-weight: 600;
+        width: 100%;
+        border-bottom: 2px solid #211c28;
+        padding: 10px;
+        border-radius: 0px !important;
+      }
+      .Dashboard__ButtonSkills {
+        margin: 0 50px;
+      }
+    }
+  }
+
   nav {
     padding: 25px 40px;
     display: flex;
@@ -38,7 +98,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50rem;
+    height: 45rem;
     .Header__InformationName {
       text-align: center;
       max-width: 750px;
