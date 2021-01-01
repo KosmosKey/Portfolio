@@ -3,10 +3,16 @@ import firebaseImage from "./images/firebase.png";
 import netlify from "./images/netlify-logo.png";
 import { Container, Grid } from "@material-ui/core";
 import SkillsComponent from "./SkillsComponent";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <div className="Skills">
+    <motion.div
+      className="Skills"
+      initial={{ y: 100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <h1>Skills</h1>
       <p className="Skills__Languages">
         Languages and Technologies that use for my projects.
@@ -349,7 +355,7 @@ const Skills = () => {
           </SkillsComponent>
         </Grid>
       </Container>
-    </div>
+    </motion.div>
   );
 };
 

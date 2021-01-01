@@ -10,8 +10,96 @@
 .App {
   display: flex;
   flex-direction: column;
+
+  .Contact__Div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .Contact {
+    padding-top: 20px;
+    padding-bottom: 75px;
+    .Contact__H1 {
+      color: #211c28;
+      text-align: center;
+      margin-top: 15px;
+    }
+    .MuiSvgIcon-root {
+      color: #211c28;
+    }
+    .Contact__CallParagraph {
+      color: #a0a8b6;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .Contact__Phone {
+      display: flex;
+      align-items: center;
+      margin-left: 35px;
+      p {
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 5px;
+        color: #211c28;
+      }
+    }
+    .Contact__Email {
+      display: flex;
+      align-items: center;
+      p {
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 5px;
+        color: #211c28;
+      }
+    }
+  }
+
+  .About {
+    padding-top: 20px;
+    padding: 50px;
+    p {
+      margin: 20px 0;
+      line-height: 28px;
+      font-weight: 400;
+    }
+    img {
+      border-radius: 10px;
+    }
+    .About__H1 {
+      color: #211c28;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .About__paragraph {
+      color: #a0a8b6;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 60px;
+      margin-top: 5px;
+      font-size: 17px;
+    }
+    .About__ImageDv {
+      max-width: 750px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
   .Projects {
     padding-top: 50px;
+    .Projects__Title {
+      text-align: center;
+    }
+
+    .Projects__Paragraph {
+      text-align: center;
+      margin-bottom: 50px;
+      font-weight: 500;
+      color: #a0a8b6;
+    }
     .Project__Buttons {
       margin-top: 30px;
       display: flex;
@@ -75,6 +163,8 @@
   }
   .Skills {
     width: 100%;
+    padding-top: 30px;
+    padding: 50px;
     h1 {
       text-align: center;
       font-size: 2.5rem;
@@ -95,7 +185,7 @@
       margin-bottom: 150px;
     }
     .Skills__ {
-      margin-top: 40px;
+      margin-top: 50px;
       width: 100%;
       padding: 20px;
 
@@ -154,16 +244,17 @@
     .Dashboard__ButtonSelectors {
       padding: 15px;
       width: 100%;
-      max-width: 750px;
+      max-width: 1000px;
       display: flex;
-      margin-bottom: 25px;
       button {
         color: #211c28;
         font-weight: 600;
         width: 100%;
-        border-bottom: 2px solid #211c28;
         padding: 10px;
         border-radius: 0px !important;
+      }
+      .Dashboard__Contact {
+        margin-left: 50px;
       }
       .Dashboard__ButtonSkills {
         margin: 0 50px;
@@ -175,6 +266,7 @@
     padding: 25px 40px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     h1 {
       cursor: pointer;
       transition: 300ms ease;
@@ -198,7 +290,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45rem;
+    padding: 100px 0;
+
     .Header__InformationName {
       text-align: center;
       max-width: 750px;
@@ -268,6 +361,86 @@
         line-height: 35px;
         font-weight: 500;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .Header__InformationName {
+    margin: 0px 50px;
+    .Header__TextH1 {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .Header__Junior {
+      margin-left: 5px;
+      margin-bottom: 5px;
+    }
+    h1 {
+      font-size: 2.2rem !important;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    h1 {
+      font-size: 15px !important;
+    }
+    .NavigationBar__SocialMediaButtons {
+      display: none;
+    }
+  }
+  .Header {
+    padding: 30px 0px !important;
+    .Header__TextH1 {
+      max-width: 500px;
+      h1 {
+        font-size: 1.7rem !important;
+        margin-top: 15px !important;
+        margin-bottom: 5px !important;
+      }
+    }
+    .Header__Junior {
+      margin-left: 20px;
+      text-align: left !important;
+      display: none !important;
+    }
+    .Header__paragraph {
+      font-size: 13px;
+    }
+    .Header__InformationName_Buttons {
+      flex-direction: column;
+      .Header__DownloadResume {
+        margin-left: 0px !important;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Dashboard {
+    .Dashboard__ButtonSelectors {
+      flex-direction: column;
+      button {
+        margin: 10px 0 !important;
+      }
+      .Dashboard__ButtonSkills {
+        margin-left: 0px !important;
+      }
+      .Dashboard__Contact {
+        margin-left: 0px !important;
+      }
+    }
+  }
+  .Contact__Div {
+    .Contact__Phone {
+      margin-top: 15px;
+    }
+
+    p {
+      font-size: 16px !important;
     }
   }
 }
