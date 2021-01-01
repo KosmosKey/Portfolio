@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@material-ui/core";
 import Skills from "./Skills";
+import Projects from "./Projects";
 
 const Dashboard = () => {
   return (
@@ -11,6 +12,7 @@ const Dashboard = () => {
         <Button>About</Button>
       </div>
       {/* <Skills /> */}
+      <Projects />
     </div>
   );
 };
