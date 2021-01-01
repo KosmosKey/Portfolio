@@ -10,38 +10,75 @@
 .App {
   display: flex;
   flex-direction: column;
-
   .Skills {
-    margin-top: 40px;
     width: 100%;
-    padding: 20px;
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #211c28;
+    }
 
-    .SkillComponent {
-      .cls-1 {
-        fill: #fff;
-      }
-      .cls-2 {
-        fill: #007acc;
-      }
-      .devicon-typescript-plain {
-        font-size: 100px;
-        color: #007acc;
-      }
+    .Skills__ToolsH1 {
+      margin-top: 50px;
+    }
 
-      .SkillComponent__ChildrenDiv {
-        background: pink;
-        font-size: 100px !important;
-        display: flex;
-        flex-direction: column;
-        height: 150px;
-      }
+    .Skills__Languages {
+      text-align: center;
+      color: #a0a8b6;
+      font-weight: 500;
+    }
 
-      p {
-        font-size: 20px;
-        font-weight: 600;
-        color: #211c28;
-        margin-top: 10px;
+    .Skills__:last-child {
+      margin-bottom: 150px;
+    }
+    .Skills__ {
+      margin-top: 40px;
+      width: 100%;
+      padding: 20px;
+
+      h1 {
         text-align: center;
+        width: 100%;
+      }
+
+      .SkillComponent {
+        .cls-1 {
+          fill: #fff;
+        }
+        .a {
+          fill: #68217a;
+        }
+        .cls-2 {
+          fill: #007acc;
+        }
+        .st0 {
+          fill: #1fa6ca;
+        }
+        .st1 {
+          fill: #1c7fb6;
+        }
+        .cls-51 {
+          fill: #cb3837;
+        }
+        .devicon-typescript-plain {
+          font-size: 100px;
+          color: #007acc;
+        }
+
+        .SkillComponent__ChildrenDiv {
+          font-size: 100px !important;
+          display: flex;
+          flex-direction: column;
+          height: 150px;
+        }
+
+        p {
+          font-size: 18px;
+          font-weight: 600;
+          color: #211c28;
+          margin-top: 10px;
+          text-align: center;
+        }
       }
     }
   }

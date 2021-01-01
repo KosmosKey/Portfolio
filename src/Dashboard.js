@@ -10,7 +10,7 @@ const Dashboard = () => {
         <Button className="Dashboard__ButtonSkills">Skills</Button>
         <Button>About</Button>
       </div>
-      <Skills />
+      {/* <Skills /> */}
     </div>
   );
 };
