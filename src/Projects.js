@@ -70,7 +70,7 @@ const Projects = () => {
             <h2>Technologies used: MERN STACK ⚛️</h2>
             <div className="Project__Buttons">
               <a
-                href="https://hobbymaker.netlify.app/"
+                href="https://hobbymaker-4fb3d.web.app/"
                 style={{ textDecoration: "none", width: "100%" }}
               >
                 <Button className="Project__WebsiteButton">
