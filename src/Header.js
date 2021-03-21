@@ -21,7 +21,7 @@ const Header = () => {
           <h1>I'm Magomed Khamidov</h1>
         </div>
         <p className="Header__paragraph">
-          I'm a Junior Full stack developer. Developer with over 1 year of
+          I'm a Full stack developer. Developer with over 2 years of
           experience in coding and making web applications. Love working with
           React JS and latest technologies ⚛️.
         </p>
